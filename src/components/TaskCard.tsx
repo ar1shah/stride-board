@@ -35,7 +35,10 @@ export const CardBody = memo(function CardBody({ task, members, labels }: CardBo
             {task.priority !== 'normal' && <PriorityIcon priority={task.priority} />}
             {task.due_date && <DueBadge due={task.due_date} done={done} />}
             {task.comment_count > 0 && (
-              <span className="card__comments" title={`${task.comment_count} comments`}>
+              <span
+                className="card__comments"
+                title={`${task.comment_count} comment${task.comment_count === 1 ? '' : 's'}`}
+              >
                 <MessageSquare size={12} />
                 {task.comment_count}
               </span>
