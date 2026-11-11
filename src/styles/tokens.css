@@ -1,0 +1,70 @@
+/*
+  Design tokens.
+
+  Palette idea: a cool, slightly green-grey "paper" canvas with deep spruce as
+  the brand color. Each status gets its own hue, and that hue is reused
+  everywhere the status shows up (column dot, stride bar, status pills,
+  activity log) so it becomes a little visual language you learn quickly.
+*/
+
+:root {
+  /* surfaces */
+  --canvas: #f2f4f1;
+  --lane: #e8ebe7;
+  --surface: #ffffff;
+  --surface-sunk: #f7f8f6;
+  --line: #dde2dc;
+  --line-strong: #c9d0c8;
+
+  /* text */
+  --ink: #1b2420;
+  --ink-2: #47524d;
+  --ink-3: #78837e;
+
+  /* brand */
+  --brand: #2f5d50;
+  --brand-hover: #264d42;
+  --brand-soft: #e2ece8;
+  --focus: #3b7d6b;
+
+  /* status hues */
+  --s-todo: #8792a2;
+  --s-progress: #d9930d;
+  --s-review: #7c5cd6;
+  --s-done: #3e9b6e;
+
+  /* signals */
+  --danger: #c93b30;
+  --danger-soft: #fbe9e7;
+  --warn: #b7780a;
+  --warn-soft: #fbf0d9;
+
+  /* type */
+  --font-ui: 'Instrument Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Bricolage Grotesque', var(--font-ui);
+
+  /* type scale (~1.2 minor third, rounded) */
+  --t-xs: 0.75rem;
+  --t-sm: 0.8125rem;
+  --t-md: 0.9375rem;
+  --t-lg: 1.125rem;
+  --t-xl: 1.375rem;
+  --t-2xl: 1.75rem;
+
+  /* radii, bigger things get rounder corners */
+  --r-xs: 4px;
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 14px;
+  --r-pill: 999px;
+
+  /* elevation: cards sit low, dragged cards and popovers lift */
+  --shadow-card: 0 1px 0 rgba(27, 36, 32, 0.04), 0 1px 2px rgba(27, 36, 32, 0.06);
+  --shadow-lift: 0 14px 28px -10px rgba(27, 36, 32, 0.28), 0 4px 10px -4px rgba(27, 36, 32, 0.14);
+  --shadow-pop: 0 10px 30px -8px rgba(27, 36, 32, 0.22), 0 0 0 1px rgba(27, 36, 32, 0.06);
+
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --sidebar-w: 248px;
+  --lane-w: 296px;
+}
