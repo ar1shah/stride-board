@@ -65,8 +65,8 @@ export function WelcomeCard({ onNewTask, onLoadSample }: { onNewTask: () => void
       <div className="welcome__copy">
         <h2>This board is all yours</h2>
         <p>
-          Add a task to get going, or load a sample board to see how cards, teammates and labels fit together. You can
-          clear it out any time.
+          Add a task to get going, or load a sample board to see how cards, teammates and labels fit together. Want a
+          clean slate later? Start a new guest session from the sidebar.
         </p>
       </div>
       <div className="welcome__actions">

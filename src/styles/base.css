@@ -204,7 +204,7 @@ kbd {
 }
 
 .avatar-stack .avatar + .avatar {
-  margin-left: -6px;
+  margin-left: -5px;
 }
 
 .chip {

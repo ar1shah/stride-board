@@ -457,8 +457,9 @@
   --hue: var(--s-todo);
   display: flex;
   flex-direction: column;
+  /* grow to fill wide screens, but never squeeze below a readable card */
   flex: 1 0 var(--lane-w);
-  max-width: 380px;
+  max-width: 360px;
   min-height: 0;
   border-radius: var(--r-lg);
   background: var(--lane);
