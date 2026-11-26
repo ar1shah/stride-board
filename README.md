@@ -67,3 +67,5 @@ supabase/migrations/      the full schema, RLS policies and triggers
 - **Ordering**: each card has a float `position`. Dropping between two cards just takes the midpoint, so a move is always a single-row update. If the gap ever gets too small, it falls back to a rebalance.
 - **Activity log**: entries are written by `security definer` triggers. Clients only get a `select` policy on `task_activity`, so you can read your history but you can't write fake entries into it.
 - **Join tables**: the insert policies on `task_assignees` and `task_labels` check that you own *both* sides of the link, not just the row itself. Otherwise you could attach your task to someone else's label or teammate.
+
+why did i make this...
